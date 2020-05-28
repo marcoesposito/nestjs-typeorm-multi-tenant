@@ -2,7 +2,10 @@
   "name": "app-mulit-tenant",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": {
+    "name": "Marco Esposito",
+    "url": "https://github.com/marcoesposito"
+  },
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
