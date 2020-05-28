@@ -37,11 +37,7 @@ export class TenantModule {
     consumer
       .apply(async (req, res, next) => {
 
-        console.log(req.headers.host)
-
         const tenant: Tenant = await this.connection.getRepository(Tenant).findOne(({ where: { host: req.headers.host } }));
-
-        console.log(tenant, await this.connection.getRepository(Tenant).find());
 
         if (!tenant) {
           throw new BadRequestException(
